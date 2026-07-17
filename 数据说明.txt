@@ -1,0 +1,10 @@
+train_large：大尺度数据集训练脚本，输入 large 航拍数据集，训练结果存入large_seg
+medium_train：中尺度数据集训练脚本，输入 medium 数据集，训练结果存入medium_seg
+train_small：小尺度数据集训练脚本，输入 small 数据集，训练结果存入small_seg
+split_dataset：数据集划分工具，自动拆分原始影像标注为训练集、验证集
+tile_chunk_save：切片工具，读取tobacco_project/rs_data原始遥感影像，分块切片输出
+infer_and_merge_shp：推理 + 矢量合并工具，切片推理后拼接生成完整烟株 shp 矢量
+compute_ndvi：NDVI 指数计算工具，基于遥感栅格生成 NDVI 栅格图层
+ndvi_stat：NDVI 指数统计工具，基于 NDVI 栅格与烟株矢量计算单株平均 NDVI
+t_1：中尺度病害识别与 NDVI 交叉对比模块，独立统计 YOLO 病害株、NDVI 胁迫株并做差异分析
+t为训练数据 结果保存在middle_seg
