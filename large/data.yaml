@@ -1,0 +1,13 @@
+path: E:/Yolov8-Remose-Image-Dataset-Process-Tool-Set-main/large
+train: train/images
+val: valid/images
+
+nc: 1
+names: ['tobacco']
+
+roboflow:
+  workspace: tobacco-plants
+  project: tobacco-shwu2
+  version: 5
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/tobacco-plants/tobacco-shwu2/dataset/5
